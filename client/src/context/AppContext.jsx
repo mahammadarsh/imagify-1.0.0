@@ -21,7 +21,7 @@ const AppContextProvider = (props) => {
   const [credit, setCredit] = useState(0);
   const [creditLoading, setCreditLoading] = useState(false);
 
-  const backendUrl = "http://localhost:4000";
+  const backendUrl = "https://imagify-1-0-0.onrender.com";
 
   const navigate = useNavigate();
   const location = useLocation();

@@ -21,7 +21,7 @@ const Checkout = () => {
 
         await cashfree.checkout({
           paymentSessionId: orderData.order_token,
-          returnUrl: `http://localhost:5173/buy?order_id=${orderData.orderId}`,
+          returnUrl: `https://myimagify.netlify.app/buy?order_id=${orderData.orderId}`,
         });
       } catch (error) {
         console.error("Payment failed:", error);
