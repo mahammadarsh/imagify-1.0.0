@@ -127,9 +127,9 @@ const createPaymentOrder = async (req, res) => {
         customer_phone: user.phone || "9999999999",
       },
       order_meta: {
-        return_url: `${process.env.FRONTEND_URL}/buy?order_id=${orderId}`,
+        return_url: `https://myimagify.netlify.app/buy?order_id=${orderId}`,
 
-        notify_url: `${process.env.BACKEND_URL}/api/users/webhook`,
+        notify_url: "https://imagify-1-0-0.onrender.com/api/users/webhook",
       },
     };
 
